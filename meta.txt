@@ -1,0 +1,102 @@
+/// functions for calculations
+1- calc_BMI();
+2- calc_smoker();
+3-calc_alchol();
+4-calc_colestrol();
+5-calc_exercise();
+6-calc_bloodpressure();
+7-calc _life _expectancy();
+(Func. Declaration)
+height 
+weight
+
+Func definition
+Calc_BMI()
+{ 
+   Bmi=weight/(Height)^2;
+   If(BMi<19)
+{   
+Return (p-4); // 100-20= 80 Jo 'p' leya hu
+}
+ElseIf(Bmi<25)&&(Bmi>19)
+{
+Return(p);
+}
+Else
+{ return(p-8)}
+}}
+calc_smoker()
+{  
+     If (Value=="yes")
+      {
+       If(p1=="Rarely")
+{ 
+return(p-7);}
+Else if (p2=="Daily")
+{
+return(p-10);
+}
+    }
+Else
+{
+Return(p);
+}
+}
+calc_bloodpressure()
+{
+If (bp==high){
+return(p-7);
+}
+Else if(bp==Normal)
+{return(p);
+}
+Elseif(bp==Medicated)
+{return (p-3);
+}
+
+calc_alchol(){
+ If(Al=="yes")
+{
+If(p1=="Rarely")
+{ 
+return(p-6);}
+Else if (p2=="Daily")
+{
+return(p-10);
+}
+}
+Else
+{
+return(p);
+}
+}
+}
+calc_colestrol()
+{
+ If (bp==high){
+return(p-6);
+}
+Else if(bp==Normal)
+{return(p);
+}
+Elseif(bp==Medicated)
+{return (p-3);
+}
+}
+calc_exercise()
+{
+   If(exe==yes)
+{
+return(p);
+}
+Else
+{
+return(80-2);
+}
+}
+
+calc _life _expectancy()
+{ int X;
+ X= ( calc_smoker(); + calc_BMI();+calc_alchol();+calc_colestrol();+calc_exercise();+calc_bloodpressure();)/6;
+Court<<"Your Life Expectancy is :"<<X<<endl;
+}
